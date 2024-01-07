@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../Screenshot-2021-06-25-at-9.41.42-PM.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .timer {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 1em;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .timmer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+  }
+  .timerfont{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+
+  }
+  .reset{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
+  .startpause, .logout {
+    font-weight: bolder;
+  }
