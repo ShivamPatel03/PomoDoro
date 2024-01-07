@@ -61,7 +61,7 @@ const PomodoroTimer = () => {
 
   return (
     <div className='timmer'>
-      <h1>{isBreak ? 'Break Timer' : 'Pomodoro Timer'}</h1>
+      <h1>{isBreak ? 'Break Timer' : 'PomoDoro Timer'}</h1>
       <div>
         <p className='timerfont'>
           {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
@@ -70,11 +70,19 @@ const PomodoroTimer = () => {
       <div>
         <button className='startpause' onClick={toggleTimer}>{isActive ? <span>&#9616;<span>&#9616; Pause</span></span> : <span>&#9658; Start</span>}</button>
         <button className='reset' onClick={resetTimer}>Reset</button>
-        <button className='logout' onClick={handleLogout} style={{backgroundColor:"red"}}>Logout</button>
-      </div>
-      <div >
-      </div>
-    </div>
+        <button className='logout' onClick={handleLogout}>Logout</button>
+        </div>
+        <div className='rulespomodoro-container'>
+  <div className='rulespomodoro'>
+    <p>Follow the Pomodoro Technique:</p>
+    <ol>
+      <li>Set a specific task before starting a Pomodoro session.</li>
+      <li>Work for 25 minutes, concentrating solely on the chosen task.</li>
+      <li>Take a short break of 5 minutes after each Pomodoro.</li>
+    </ol>
+  </div>
+</div>
+</div>
   );
 };
 

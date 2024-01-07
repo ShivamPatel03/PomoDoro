@@ -1,63 +1,152 @@
 body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('../Screenshot-2021-06-25-at-9.41.42-PM.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  .timer {
-    font-size: 2em;
-    margin: 20px 0;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  button {
-    font-size: 1em;
-    margin: 0 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  .timmer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-  }
-  .timerfont{
-    font-weight: bolder;
-    font-size: xx-large;
-    color: white;
-    font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../Screenshot-2021-06-25-at-9.41.42-PM.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  }
-  .reset{
-    background-color: yellow;
-    color: black;
-    font-weight: bold;
-  }
-  .startpause, .logout {
-    font-weight: bolder;
-  }
+h1 {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.container {
+  text-align: center;
+}
+
+.timer {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.LoginOutline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1em;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.timmer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.timerfont {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.reset {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.startpause,
+.reset,
+.logout {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  font-weight: bolder; 
+}
+
+.startpause:hover,
+.reset:hover,
+.logout:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.logout {
+  background-color: red;
+  color: white;
+}
+
+.logout:hover {
+  background-color: darkred;
+}
+
+.additionalText {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.additionalText2,
+.additionalText3 {
+  margin-top: 5px;
+  font-size: 1.2em;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+.additionalText2 {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: black;
+  background-color: greenyellow;
+}
+
+.additionalText3 {
+  background-color: yellow;
+}
+.rulespomodoro-container {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  border: 2px solid red; /* Red border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+  margin-top: 30px;
+}
+
+.rulespomodoro {
+  font-size: 1.2em;
+  color: black; /* Black text color */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.rulespomodoro p {
+  margin-bottom: 10px;
+}
+
+.rulespomodoro ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.rulespomodoro ol li {
+  margin-bottom: 8px;
+}
